@@ -1,0 +1,101 @@
+
+    #cartk{
+       padding-top: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        direction:rtl;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+ #bt{
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    margin-left: 6%;
+ }
+ #table{
+    width: 65%;
+ }
+    #titleIntable{
+        gap: 15%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        border-bottom-style: solid;
+        border-bottom-color: black;
+        border-bottom-width: 2px;
+        height: 80px;
+        background-color: rgb(244, 244, 244);
+        
+     }   
+
+.divIntable{
+    display: flex;
+    justify-content: center;
+    height: 230px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    align-items:center;
+    gap: 3%;
+}
+.divIntable>#imgname{
+    justify-content: center;
+  text-align: center;
+}
+
+.divIntable>#imgname>img{
+    /* border: solid black 0.5px; */
+     border-radius: 15px; 
+    
+}
+
+
+ .divIntable>#details{
+    width: 70%;
+    justify-content: center;
+    display: flex;
+    gap: 25%;
+    font-size: 25px;
+    text-align: center;
+ }
+ #autoSizingSelect{
+    width: 80px;
+   height: 40px;
+   border: solid black 1px;
+   border-radius: 30px; 
+   box-shadow: 4px 4px 1px rgb(229, 185, 185);
+ }
+ #autoSizingSelect:hover{
+    width: 81px;
+    height: 41px;
+    box-shadow: none;
+ 
+ }
+ .fa-trash{
+    color: rgb(132, 134, 134);
+    font-size:50px ;
+ }
+ #bottomIntable{
+    gap: 15%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border-top-width: 2px;
+    height: 80px; 
+    background-color: rgb(244, 244, 244);
+   border-bottom: none;
+ 
+ }
+ 
+ #RemoveAll,#continueBuy,#pay{
+    width: 180px;
+    height: 50px;
+    border: solid black 1px;
+    border-radius: 30px; 
+    box-shadow: 4px 4px 1px rgb(229, 185, 185);
+ }
+ #RemoveAll:hover,#continueBuy:hover,#pay:hover{
+    width: 182px;
+    height: 50px;
+    box-shadow: none;
+ 
+ }

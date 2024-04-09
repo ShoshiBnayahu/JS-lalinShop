@@ -1,0 +1,315 @@
+#top-nav {
+    width: 100%;
+    height: 180px;
+    Position: fixed;
+    z-index: 4;
+    background-color: white;
+    box-shadow: 4px 4px 6px rgb(237, 232, 232);
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#top-nav>a>img {
+    padding-top: 20px;
+}
+
+#top-nav>ul {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+#top-nav>ul>li {
+    padding-top: 20px;
+}
+
+.nav-item {
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+#top-nav>ul>#openList {
+    
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    border: none;
+   
+}
+
+.nav-link {
+    color: black;
+}
+
+#Search-input {
+    width: 300px;
+    border-radius: 10px;
+    padding-top: 25px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+#cart,
+#heart {
+    margin-top: 0%;
+    width: 80px;
+    animation-name: color-animation3;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+#Search-icon {
+    font-size: 20px;
+}
+
+
+@keyframes color-animation3 {
+
+    50% {
+        font-size: 25px;
+
+    }
+}
+
+#list{
+    display: none;
+}
+#link-nav {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: absolute;
+    /* position: fixed; */
+    z-index: 2;
+    margin-top: 180px;
+    width: 100%;
+    box-shadow: 4px 4px 6px rgb(237, 232, 232);
+
+}
+
+#title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    height: 80px;
+}
+
+#title>h3 {
+    font-size: 15px;
+
+}
+
+#link-nav>a {
+    text-decoration: none;
+}
+
+#link-nav>a>div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px;
+
+}
+
+#link-nav>a>div>img {
+    border-style: solid;
+    border-radius: 100px;
+}
+
+#link-nav>a>div>p {
+    width: 120px;
+    text-align: center;
+    font-size: larger;
+    color: black;
+
+}
+#up {
+    display: block;
+    padding-left: 75%;
+    font-size: 35px;
+}
+
+/* <!-- ניסוי  --> */
+
+#enter-login {
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    position: fixed;
+    z-index: 3;
+    margin-top: 200px;
+    margin-left: 10px;
+    width: 550px;
+    height: 430px;
+    border: solid black 1px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 6px rgb(237, 232, 232);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: space-between; */
+    justify-content: center;
+
+    align-items: center;
+    animation-name: animation2;
+    animation-duration: 0.3s;
+    animation-delay: 0.1s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+    animation-fill-mode: both;
+
+}
+
+#new-user,
+#submit {
+    width: 300px;
+    height: 50px;
+    border: solid black 1px;
+    border-radius: 30px;
+    box-shadow: 7px 7px 1px rgb(229, 185, 185);
+}
+
+#new-user:hover,
+#submit:hover {
+    width: 310px;
+    height: 55px;
+    box-shadow: none;
+
+}
+
+#exampleInputEmail1,
+#exampleInputName1 {
+    width: 500px;
+    color: black;
+    border-radius: 10px;
+    padding-top: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+#grin-beam:hover {
+    animation-play-state: paused;
+}
+
+#exampleCheck1 {
+    animation-name: animation3;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+#exampleCheck1:hover {
+    animation-play-state: paused;
+}
+
+@keyframes animation3 {
+
+    50% {
+        margin-left: 15px;
+
+    }
+}
+
+
+@keyframes animation2 {
+
+    0% {
+        margin-top: 0px;
+        opacity: 0;
+    }
+
+    5% {
+        margin-top: 100px;
+        opacity: 0.9;
+    }
+
+    90% {
+        margin-top: 200px;
+        opacity: 1;
+
+    }
+
+}
+
+#arrow-right,
+#times {
+    margin-left: 490px;
+    font-size: 30px;
+}
+
+#enter-login>img {}
+
+/* עד כאן */
+
+#square2 {
+    position: fixed;
+    z-index: 6;
+    top: 80%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 250px;
+    background-image: url(../assests/alert2.png);
+    background-size: cover;
+    box-shadow: 0px 0px 6px rgb(38, 37, 37);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    box-shadow: 0px 0px 6px rgb(38, 37, 37);
+
+}
+
+#square2>#botton4 {
+    margin-left: 35%;
+    margin-top: 46%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+@media screen and (min-width:0px) and (max-width:1510px) {
+    #list{
+        padding: 10px;
+        display: block;
+        font-size: 30px;
+    }
+    #Search-input {
+        width: 160px;}
+    #top-nav>ul>#openList {
+       flex-direction: column;
+       position: absolute;
+       z-index: 5;
+       margin-top: 90px;
+       background-color:rgb(252, 231, 231);
+       color: aliceblue;
+       box-shadow: 0px  0px  6px  rgb(89, 89, 89);
+       /* margin-left: 250px;  */
+       padding: 20px;
+       display: none;
+       border-radius: 10px;
+   }
+   #enter-login {
+    width: 400px;
+   }
+   #exampleInputEmail1,
+   #exampleInputName1 {
+       width: 380px;
+   }
+   #arrow-right,
+#times {
+    margin-left: 350px;
+}
+
+}

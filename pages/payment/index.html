@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="stylesheet" href="../../packages/fontawesome-free-6.1.1-web/css/all.css" />
+  <link rel="stylesheet" href="../../packages/bootstrap-3.4.1-dist/css/bootstrap-theme.css" />
+  <link rel="stylesheet" href="../../packages/bootstrap-3.4.1-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../packages/fontawesome-free-6.1.1-web/css/all.css">
+  <title>laline</title>
+</head>
+
+<body>
+  <div id="top-nav">
+    <a href="../../pages/home/index.html"> <img src="../../assests/ללין-שחור.png" width="200px"></a>
+    <ul class="nav nav-tabs">
+      
+      
+      <li class="nav-item" id="cart">
+        <a class="nav-link" href="#"> <i class="fa-solid fa-cart-shopping" id="carticon"></i></a>
+      </li>
+      <li class="nav-item" id="heart">
+        <a class="nav-link" href="#"> <i class="far fa-heart" id="hearticon"></i></a>
+      </li>
+      <div id="openList" class="nav nav-tabs">
+        <li id="user" class="nav-item">
+          <a class="nav-link" href="#">להתחברות <i class="fa-solid fa-user"></i></a>
+        </li>
+        <li id="primium" class="nav-item">
+          <a class="nav-link" href="#">סדרות פרימיום</a>
+        </li>
+        <li id="gifts" class="nav-item">
+          <a class="nav-link" href="#">מארזי מתנה</a>
+        </li>
+        <li id="smell" class="nav-item">
+          <a class="nav-link" href="#">ניחוחות קלאסיים</a>
+        </li>
+        
+      </div>
+      <li>
+        <form id="Search" class="nav_item" role="search">
+          <input id="Search-input" type="search" placeholder="Search" aria-label="Search">
+          <i class="fas fa-search" id="Search-icon"></i>
+        </form>
+      </li>
+      <li>
+        <div id="list"><i class="fas fa-list"></i></div>
+      </li>
+    </ul>
+  </div>
+  <div id="link-nav">
+  </div>
+  <!-- ניסוי  -->
+  <div id="box"></div>
+  <div id="payment_page">
+
+    <form id="payment">
+      <div class="step" id="step_1">
+        <div class="mb-3">
+          <div><i class="fas fa-arrow-circle-right"></i> </div>
+          <h2 id="sen">YOUR DETAILES <i class="far fa-address-book"></i> <br><span id="p1"></span></h2>
+          <label class="form-label">YOUR EMAIL </label><br>
+          <input class="inPay" type="email" id="payEmail" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label"> YOUR NAME</label><br>
+          <input class="inPay" type="text" id="payName" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label"> YOUR ADDRESS</label><br>
+          <input class="inPay" type="text" id="payAddress" required>
+        </div>
+        <a href="#step_2"> <button type="button" id="next" class="btn btn-light btn-lg">NEXT</button></a>
+      </div>
+      <div class="step" id="step_2">
+        <div class="mb-3">
+          <h2 id="sen">CERDDIT ACCOUNT <i class="fas fa-money-check-alt"></i> <br><span id="p2"></span></h2>
+
+          <label class="form-label">HOLDER NAME</label><br>
+          <input class="inPay" type="text" id="payNameHolder" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">CREDIT CARD NUMBER</label><br>
+          <input class="inPay" type="text" id="payNumCard" placeholder="****************" minlength="12" maxlength="16"
+            required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">CVC*</label><br>
+          <input class="inPay" type="text" id="3Num" placeholder="***" minlength="3" maxlength="3" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">EXPIRY DATE </label><br>
+          <input class="inPay" type="date" id="payDate" required>
+        </div>
+        <a href="#payment"><button id="prev" type="button" class="btn btn-light btn-lg">PREVIOUS</button></a>
+        <a href="#"><button id="finish" type="submit" class="btn btn-light btn-lg">FOR SUMBIT</button></a>
+      </div>
+      <div class="step" id="step_3">
+        <h3 >הזמנתך תגיע תוך 5 ימי עסקים אל הכתובת</h3>
+        <h2 id="orderAddress"></h2>
+        <img src="../../assests/payment/delivery.gif" width="300px">
+        <a href="../../pages/home/index.html"><button id="close" type="button" class="btn btn-light btn-lg">CLOSE</button></a>
+        <p>תודה שקנית אצלינו <i class="far fa-grin-beam"></i></p>
+      </div>
+    </form>
+</body>
+
+<script src="../../packages/jquery-3.6.4.min.js"></script>
+<script src="./index.js"></script>
+<script src="../../styles/index.js"></script>
+
+</html>
